@@ -1,0 +1,24 @@
+# common
+/node_modules
+yarn-error.log
+/app
+/dist
+/res/icon.ico
+/res/icons
+/src/i18n/i18n.json
+*.zip
+/src/img/favicon.png
+/src/img/apple-favicon.png
+/src/parsers/*.js
+
+/foxxApp-bin
+/www
+/spa
+
+*.blend1
+
+static
+
+# project
+/src/parser.js
+temp

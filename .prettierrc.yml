@@ -1,0 +1,7 @@
+printWidth: 120
+tabWidth: 4
+# if true must add bellow to start of file to be auto-formatted
+# /**
+#  * @prettier
+#  */
+requirePragma: false

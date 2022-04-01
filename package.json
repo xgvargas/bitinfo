@@ -1,0 +1,30 @@
+{
+    "name": "bitinfo",
+    "version": "0.1.0",
+    "description": "Create image from bitmap",
+    "main": "bitinfo.js",
+    "author": "Gustavo Vargas <xgvargas@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "dev": "mkdir -p temp && run-p -l dev:*",
+        "dev:server": "reload -bs temp/debug.html",
+        "dev:test": "DEFBITINFO=1 onchange -i src/*.js -- node src/bitinfo.js -o temp/debug.html",
+        "build": "run-s -l build:peg build:cli",
+        "build:cli": "rollup -c",
+        "build:peg": "peggy src/parser.pegjs"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^21.0.2",
+        "@rollup/plugin-json": "^4.1.0",
+        "@rollup/plugin-node-resolve": "^13.1.3",
+        "grammkit": "^0.7.1",
+        "peggy": "^1.2.0",
+        "rollup": "^2.70.1",
+        "rollup-plugin-terser": "^7.0.2"
+    },
+    "dependencies": {
+        "@svgdotjs/svg.js": "^3.1.2",
+        "commander": "^9.1.0",
+        "svgdom": "^0.1.10"
+    }
+}
