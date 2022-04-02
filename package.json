@@ -1,7 +1,7 @@
 {
     "name": "bitinfo",
     "version": "0.1.0",
-    "description": "Create image from bitmap",
+    "description": "A graphic generator to help describe bitmaps",
     "main": "bitinfo.js",
     "author": "Gustavo Vargas <xgvargas@gmail.com>",
     "license": "MIT",
@@ -11,8 +11,10 @@
         "dev:test": "DEFBITINFO=1 onchange -i src/*.js -- node src/bitinfo.js -o temp/debug.html",
         "build": "run-s -l build:peg build:cli",
         "build:cli": "rollup -c",
-        "build:peg": "peggy src/parser.pegjs"
+        "build:peg": "peggy src/parser.pegjs",
+        "prepare": "run-s build:peg"
     },
+    "bin": "./src/cli.js",
     "devDependencies": {
         "@rollup/plugin-commonjs": "^21.0.2",
         "@rollup/plugin-json": "^4.1.0",
@@ -26,5 +28,17 @@
         "@svgdotjs/svg.js": "^3.1.2",
         "commander": "^9.1.0",
         "svgdom": "^0.1.10"
-    }
+    },
+    "homepage": "https://github.com/xgvargas/bitinfo#bitinfo",
+    "bugs": {
+        "url": "https://github.com/xgvargas/bitinfo/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xgvargas/bitinfo.git"
+    },
+    "keywords": [
+        "markdown",
+        "bitmap"
+    ]
 }
