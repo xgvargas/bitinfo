@@ -5,3 +5,7 @@ tabWidth: 4
 #  * @prettier
 #  */
 requirePragma: false
+overrides:
+    - files: ["*.md"]
+      options:
+          proseWrap: never

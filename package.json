@@ -1,8 +1,8 @@
 {
     "name": "bitinfo",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "A graphic generator to help describe bitmaps",
-    "main": "bitinfo.js",
+    "main": "./src/bitinfo.js",
     "author": "Gustavo Vargas <xgvargas@gmail.com>",
     "license": "MIT",
     "scripts": {
@@ -19,6 +19,8 @@
         "@rollup/plugin-commonjs": "^21.0.2",
         "@rollup/plugin-json": "^4.1.0",
         "@rollup/plugin-node-resolve": "^13.1.3",
+        "eslint": "^8.17.0",
+        "eslint-config-prettier": "^8.5.0",
         "grammkit": "^0.7.1",
         "peggy": "^1.2.0",
         "rollup": "^2.70.1",
